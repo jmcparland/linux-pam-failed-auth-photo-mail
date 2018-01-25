@@ -13,7 +13,7 @@ Our `/usr/local/bin/handle-pwfail.sh` file is a simple bash script that performs
 * Take a photo snapshot using the laptop's built-in web camera. [Requires the ffmpeg package.]
 * "Calls home" as an openvpn client back to a waiting openvpn server. [Requires openvpn & configuration of client & server.]
 * "Enables" the openvpn service so that the link will be persistent / re-establish on reboot.
-* Starts and enables the sshd service for remote login.
+* Starts and enables the sshd service for remote login. (Requires openssh-server.)
 * Opens the laptop existing firewall configureation to accept inbound connections -- for instance, ssh connections through vpn to the laptop. (`iptables -P INPUT ACCEPT`)
 * Sends an email report of the event, including:
   * The hostname of the laptop
