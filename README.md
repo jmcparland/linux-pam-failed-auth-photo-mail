@@ -15,7 +15,7 @@ Our `/usr/local/bin/handle-pwfail.sh` file is a simple bash script that performs
 * "Enables" the openvpn service so that the link will be persistent / re-establish on reboot.
 * Starts and enables the sshd service for remote login. (Requires openssh-server.)
 * Opens the laptop existing firewall configureation to accept inbound connections -- for instance, ssh connections through vpn to the laptop. (`iptables -P INPUT ACCEPT`)
-* Sends an email report of the event, including:
+* Sends an email report (requires `mailutils` for `mail` command) of the event, including:
   * The hostname of the laptop
   * The date & time of the event
   * The public IP address in front of the laptop (output of `wget -qO- ipinfo.io/ip`)
