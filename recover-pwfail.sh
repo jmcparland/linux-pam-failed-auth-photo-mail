@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VPN="openvpn@overwatch"
+VPN="openvpn@myvpnid"
 
 iptables -P INPUT DROP
 systemctl disable $VPN
