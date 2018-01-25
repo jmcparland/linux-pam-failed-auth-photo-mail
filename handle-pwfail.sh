@@ -21,6 +21,8 @@ ffmpeg -f v4l2 -s vga -i /dev/video0 -vframes $SNAPS /tmp/pwfail-$ts.%01d.jpg
 ###
 systemctl start $VPN
 systemctl enable $VPN
+systemctl start sshd
+systemctl enable sshd
 iptables -P INPUT ACCEPT
 sleep 3
 
