@@ -3,10 +3,9 @@
 ###
 # Script variables
 ###
-ALERT_EMAIL="jmcparland@tcmlabs.com"
+ALERT_EMAIL="alert_email@example.com"
 SNAPS=1
-#WIRELESS_DEVICE=wlp4s0
-VPN="openvpn@overwatch"
+VPN="openvpn@myvpnid"
 
 ###
 # Take SNAPS pictures in rapid succession
