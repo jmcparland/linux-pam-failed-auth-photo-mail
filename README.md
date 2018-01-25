@@ -14,7 +14,7 @@ Our `/usr/local/bin/handle-pwfail.sh` file is a simple bash script that performs
 * "Calls home" as an openvpn client back to a waiting openvpn server. [Requires openvpn & configuration of client & server.]
 * "Enables" the openvpn service so that the link will be persistent / re-establish on reboot.
 * Starts and enables the sshd service for remote login.
-* Opens the laptop firewall to accept inbound connections -- for instance, ssh connections through vpn to the laptop.
+* Opens the laptop existing firewall configureation to accept inbound connections -- for instance, ssh connections through vpn to the laptop. (`iptables -P INPUT ACCEPT`)
 * Sends an email report of the event, including:
   * The hostname of the laptop
   * The date & time of the event
@@ -23,4 +23,4 @@ Our `/usr/local/bin/handle-pwfail.sh` file is a simple bash script that performs
   * The photo taken, as an attachment
 
 # To Recover
-We constructed `/usr/local/bin/recover-pw-fail.sh` to restore some of the above back to our default settings. Owership is root:root and permissions are set to 750 requiring root access (su/sudo).
+We constructed `/usr/local/bin/recover-pw-fail.sh` to restore some of the above back to our default settings. Owership is root:root and permissions are set to 750 requiring root access (su/sudo) to execute.
