@@ -24,3 +24,6 @@ Our `/usr/local/bin/handle-pwfail.sh` file is a simple bash script that performs
 
 # To Recover
 We constructed `/usr/local/bin/recover-pw-fail.sh` to restore some of the above back to our default settings. Owership is root:root and permissions are set to 750 requiring root access (su/sudo) to execute.
+
+# Inspired?
+This is an abstract howto at best, but hopefully sufficient to inspire your own PAM-based handling of failed authentication.
